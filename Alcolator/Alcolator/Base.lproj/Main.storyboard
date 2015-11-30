@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6EE-Uf-NpH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6EE-Uf-NpH">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -17,35 +17,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSj-oJ-EMw">
-                                <rect key="frame" x="240" y="124" width="133" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSj-oJ-EMw">
+                                <rect key="frame" x="32" y="104" width="538" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="3C5-o6-voc"/>
                                     <constraint firstAttribute="width" constant="133" id="rVw-nG-OfS"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
-                                <state key="normal" title="Calculate!"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <state key="normal" title="Calculate"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3C5-o6-voc"/>
+                                        <exclude reference="rVw-nG-OfS"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fQx-81-Stm"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="% Alcohol Content per Beer" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tRz-hk-M2F">
-                                <rect key="frame" x="34" y="20" width="566" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="% Alcohol Content per Beer" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tRz-hk-M2F">
+                                <rect key="frame" x="16" y="28" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="textFieldDidChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="SdU-xW-hqa"/>
                                 </connections>
                             </textField>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="bGL-RD-P5L">
-                                <rect key="frame" x="8" y="51" width="619" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="bGL-RD-P5L">
+                                <rect key="frame" x="14" y="66" width="572" height="31"/>
                                 <connections>
                                     <action selector="sliderValueDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="Vit-m4-xA3"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tfb-pP-Ycg">
-                                <rect key="frame" x="35" y="169" width="530" height="23"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="???" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tfb-pP-Ycg">
+                                <rect key="frame" x="31" y="169" width="538" height="26"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="19"/>
                                 <color key="textColor" red="0.29411764709999999" green="0.68627450980000004" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -53,18 +59,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="tRz-hk-M2F" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="44N-fk-dQr"/>
-                            <constraint firstItem="Tfb-pP-Ycg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="51S-lu-QJE"/>
-                            <constraint firstItem="bGL-RD-P5L" firstAttribute="top" secondItem="tRz-hk-M2F" secondAttribute="bottom" constant="1" id="5fr-A0-2MO"/>
-                            <constraint firstItem="KSj-oJ-EMw" firstAttribute="top" secondItem="bGL-RD-P5L" secondAttribute="bottom" constant="43" id="6Yy-Vv-hY5"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="tRz-hk-M2F" secondAttribute="trailing" constant="-20" id="HZ5-az-fGb"/>
-                            <constraint firstItem="KSj-oJ-EMw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="240" id="Pfd-b4-L8N"/>
-                            <constraint firstItem="Tfb-pP-Ycg" firstAttribute="top" secondItem="KSj-oJ-EMw" secondAttribute="bottom" constant="8" id="TDO-w9-GlG"/>
-                            <constraint firstItem="bGL-RD-P5L" firstAttribute="centerX" secondItem="tRz-hk-M2F" secondAttribute="centerX" id="Zj7-Fo-G7U"/>
-                            <constraint firstItem="tRz-hk-M2F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14" id="gd3-kB-6Su"/>
-                            <constraint firstItem="bGL-RD-P5L" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="15" id="tCH-Fy-dHn"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Tfb-pP-Ycg" secondAttribute="trailing" constant="15" id="vb9-f5-NOR"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="KSj-oJ-EMw" secondAttribute="trailing" constant="207" id="zVB-0P-miE"/>
+                            <constraint firstItem="tRz-hk-M2F" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="44N-fk-dQr"/>
+                            <constraint firstItem="bGL-RD-P5L" firstAttribute="top" secondItem="tRz-hk-M2F" secondAttribute="bottom" constant="8" id="5fr-A0-2MO"/>
+                            <constraint firstItem="KSj-oJ-EMw" firstAttribute="top" secondItem="bGL-RD-P5L" secondAttribute="bottom" constant="8" id="6Yy-Vv-hY5"/>
+                            <constraint firstItem="bGL-RD-P5L" firstAttribute="centerX" secondItem="KSj-oJ-EMw" secondAttribute="centerX" id="Eac-rh-ZRh"/>
+                            <constraint firstItem="tRz-hk-M2F" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="HZ5-az-fGb"/>
+                            <constraint firstItem="Tfb-pP-Ycg" firstAttribute="width" secondItem="KSj-oJ-EMw" secondAttribute="width" id="Kiy-0d-dbp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tfb-pP-Ycg" secondAttribute="trailing" constant="15" id="MCv-Ji-jlZ"/>
+                            <constraint firstItem="tRz-hk-M2F" firstAttribute="centerX" secondItem="bGL-RD-P5L" secondAttribute="centerX" id="Zj7-Fo-G7U"/>
+                            <constraint firstItem="tRz-hk-M2F" firstAttribute="width" secondItem="bGL-RD-P5L" secondAttribute="width" id="d2B-Fh-APm"/>
+                            <constraint firstItem="Tfb-pP-Ycg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="flL-qM-U6L"/>
+                            <constraint firstItem="tRz-hk-M2F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gd3-kB-6Su"/>
+                            <constraint firstItem="Tfb-pP-Ycg" firstAttribute="top" secondItem="KSj-oJ-EMw" secondAttribute="bottom" constant="20" id="mSe-J9-QOr"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="3ln-fk-iSl" appends="YES" id="QaV-g6-QNl"/>
@@ -97,58 +103,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ncc-va-dwl">
-                                <rect key="frame" x="240" y="124" width="133" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ncc-va-dwl">
+                                <rect key="frame" x="32" y="104" width="538" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="133" id="W7P-EQ-clH"/>
                                     <constraint firstAttribute="height" constant="37" id="nXd-l5-Mae"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
-                                <state key="normal" title="Calculate!"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <state key="normal" title="Calculate"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="W7P-EQ-clH"/>
+                                        <exclude reference="nXd-l5-Mae"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="buttonPressed:" destination="POo-T9-QtO" eventType="touchUpInside" id="6jR-eR-pe4"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="% Alcohol Content per Beer" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="apL-TR-GAq">
-                                <rect key="frame" x="34" y="20" width="566" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="% Alcohol Content per Beer" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="apL-TR-GAq">
+                                <rect key="frame" x="16" y="28" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="textFieldDidChange:" destination="POo-T9-QtO" eventType="editingChanged" id="ZfX-sO-Oib"/>
                                 </connections>
                             </textField>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="DHo-s3-45V">
-                                <rect key="frame" x="8" y="51" width="619" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="DHo-s3-45V">
+                                <rect key="frame" x="-9" y="66" width="619" height="31"/>
                                 <connections>
                                     <action selector="sliderValueDidChange:" destination="POo-T9-QtO" eventType="valueChanged" id="Kcg-pE-V67"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTe-qA-2Jp">
-                                <rect key="frame" x="296.5" y="169" width="42" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="6Zu-6r-GVg"/>
-                                    <constraint firstAttribute="width" constant="42" id="fB4-eU-qLx"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="???" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTe-qA-2Jp">
+                                <rect key="frame" x="31" y="169" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="Ncc-va-dwl" firstAttribute="top" secondItem="DHo-s3-45V" secondAttribute="bottom" constant="43" id="7Dh-gO-4HE"/>
-                            <constraint firstItem="Ncc-va-dwl" firstAttribute="leading" secondItem="pXW-M8-xUW" secondAttribute="leading" constant="240" id="AVQ-2a-6uc"/>
-                            <constraint firstItem="apL-TR-GAq" firstAttribute="leading" secondItem="pXW-M8-xUW" secondAttribute="leadingMargin" constant="14" id="GTY-CJ-A5F"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="apL-TR-GAq" secondAttribute="trailing" constant="-20" id="PFJ-xj-Dm6"/>
-                            <constraint firstItem="apL-TR-GAq" firstAttribute="top" secondItem="dyn-pC-neD" secondAttribute="bottom" id="VrB-pd-h2z"/>
-                            <constraint firstItem="nTe-qA-2Jp" firstAttribute="top" secondItem="Ncc-va-dwl" secondAttribute="bottom" constant="8" symbolic="YES" id="WF8-xV-2hN"/>
-                            <constraint firstItem="nTe-qA-2Jp" firstAttribute="centerX" secondItem="DHo-s3-45V" secondAttribute="centerX" id="jiS-FJ-rT2"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ncc-va-dwl" secondAttribute="trailing" constant="207" id="nx6-T8-lIv"/>
+                            <constraint firstItem="apL-TR-GAq" firstAttribute="width" secondItem="DHo-s3-45V" secondAttribute="width" id="1fI-xm-rnW"/>
+                            <constraint firstItem="Ncc-va-dwl" firstAttribute="top" secondItem="DHo-s3-45V" secondAttribute="bottom" constant="8" id="7Dh-gO-4HE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nTe-qA-2Jp" secondAttribute="trailing" constant="15" id="7aW-bp-9D0"/>
+                            <constraint firstItem="apL-TR-GAq" firstAttribute="leading" secondItem="pXW-M8-xUW" secondAttribute="leadingMargin" id="GTY-CJ-A5F"/>
+                            <constraint firstItem="apL-TR-GAq" firstAttribute="trailing" secondItem="pXW-M8-xUW" secondAttribute="trailingMargin" id="PFJ-xj-Dm6"/>
+                            <constraint firstItem="apL-TR-GAq" firstAttribute="top" secondItem="dyn-pC-neD" secondAttribute="bottom" constant="8" id="VrB-pd-h2z"/>
+                            <constraint firstItem="nTe-qA-2Jp" firstAttribute="top" secondItem="Ncc-va-dwl" secondAttribute="bottom" constant="20" id="WF8-xV-2hN"/>
+                            <constraint firstItem="Ncc-va-dwl" firstAttribute="centerX" secondItem="DHo-s3-45V" secondAttribute="centerX" id="ay1-os-16z"/>
+                            <constraint firstItem="nTe-qA-2Jp" firstAttribute="leading" secondItem="pXW-M8-xUW" secondAttribute="leadingMargin" constant="15" id="blv-Lc-61w"/>
+                            <constraint firstItem="DHo-s3-45V" firstAttribute="top" secondItem="apL-TR-GAq" secondAttribute="bottom" constant="8" id="laF-VK-j4M"/>
                             <constraint firstItem="DHo-s3-45V" firstAttribute="centerX" secondItem="apL-TR-GAq" secondAttribute="centerX" id="oI6-ca-sA1"/>
                             <constraint firstItem="DHo-s3-45V" firstAttribute="width" secondItem="pXW-M8-xUW" secondAttribute="width" constant="15" id="s1c-Ts-7g6"/>
-                            <constraint firstItem="DHo-s3-45V" firstAttribute="top" secondItem="apL-TR-GAq" secondAttribute="bottom" constant="1" id="u0b-DL-H0Y"/>
+                            <constraint firstItem="nTe-qA-2Jp" firstAttribute="width" secondItem="Ncc-va-dwl" secondAttribute="width" id="tn4-aD-4oD"/>
+                            <constraint firstItem="DHo-s3-45V" firstAttribute="top" secondItem="apL-TR-GAq" secondAttribute="bottom" constant="8" id="u0b-DL-H0Y"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="s1c-Ts-7g6"/>
+                                <exclude reference="u0b-DL-H0Y"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Whiskey" image="whiskey" id="0Vq-dH-8U0"/>
                     <connections>

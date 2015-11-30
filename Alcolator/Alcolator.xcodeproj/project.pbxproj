@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		95A8F54C1BFBBDEB00F89F26 /* WhiskeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A8F54B1BFBBDEB00F89F26 /* WhiskeyViewController.m */; settings = {ASSET_TAGS = (); }; };
+		95A8F54C1BFBBDEB00F89F26 /* WhiskeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A8F54B1BFBBDEB00F89F26 /* WhiskeyViewController.m */; };
 		95D467041BFA9312000BD128 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D467031BFA9312000BD128 /* main.m */; };
 		95D467071BFA9312000BD128 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D467061BFA9312000BD128 /* AppDelegate.m */; };
 		95D4670A1BFA9312000BD128 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D467091BFA9312000BD128 /* ViewController.m */; };
@@ -108,13 +108,12 @@
 				95D467061BFA9312000BD128 /* AppDelegate.m */,
 				95D467081BFA9312000BD128 /* ViewController.h */,
 				95D467091BFA9312000BD128 /* ViewController.m */,
+				95A8F54A1BFBBDEB00F89F26 /* WhiskeyViewController.h */,
+				95A8F54B1BFBBDEB00F89F26 /* WhiskeyViewController.m */,
 				95D4670B1BFA9312000BD128 /* Main.storyboard */,
 				95D4670E1BFA9312000BD128 /* Assets.xcassets */,
 				95D467101BFA9312000BD128 /* LaunchScreen.storyboard */,
-				95D467131BFA9312000BD128 /* Info.plist */,
 				95D467021BFA9312000BD128 /* Supporting Files */,
-				95A8F54A1BFBBDEB00F89F26 /* WhiskeyViewController.h */,
-				95A8F54B1BFBBDEB00F89F26 /* WhiskeyViewController.m */,
 			);
 			path = Alcolator;
 			sourceTree = "<group>";
@@ -122,6 +121,7 @@
 		95D467021BFA9312000BD128 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				95D467131BFA9312000BD128 /* Info.plist */,
 				95D467031BFA9312000BD128 /* main.m */,
 			);
 			name = "Supporting Files";
